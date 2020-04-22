@@ -10,7 +10,7 @@ function Widget() {
   const [response, setResponse] = useState("");
 
   useEffect(() => {
-    window.TagoIO.onStart();
+    window.TagoIO.ready();
   }, []);
 
   // clears the return message when sending data
