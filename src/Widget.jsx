@@ -25,12 +25,7 @@ function Widget() {
       variable: varName,
       value
     }];
-    const options = {
-      // complete the variables with the bucket and origin ids (if this option is false, this information needs to be passed)
-      // autoFill can be a problem if you have two variables with the same name in different buckets
-      autoFill: true,
-    }
-    window.TagoIO.sendData(payload, options, 
+    window.TagoIO.sendData(payload,
       // callback that runs when sendData returns
       (response) => {
         if (response.status) {
